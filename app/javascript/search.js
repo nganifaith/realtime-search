@@ -20,7 +20,7 @@ function search() {
     }
 }
 
-searchForm.search.addEventListener("keyup", debounce(search, 500));
+searchForm.search.addEventListener("keyup", debounce(search));
 searchForm.addEventListener("submit", e => {
     e.preventDefault();
     search();
