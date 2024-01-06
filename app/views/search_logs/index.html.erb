@@ -1,5 +1,5 @@
 <h1 class="my-4 text-center text-4xl font-extrabold tracking-tight leading-none text-gray-900 dark:text-white">
-    Recent Search terms
+    Popular Search terms
 </h1>
 
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -13,7 +13,10 @@
                     IP Address
                 </th>
                 <th scope="col" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
-                    Time
+                    First Searched on
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    # of Searches
                 </th>
             </tr>
         </thead>
@@ -28,6 +31,9 @@
                     </td>
                     <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
                         <%= search_log.updated_at.strftime('%d %B %Y at %I:%M %P') %>
+                    </td>
+                    <td class="px-6 py-4">
+                        <%= search_log.count %>
                     </td>
                 </tr>
             <% end %>
