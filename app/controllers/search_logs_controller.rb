@@ -1,4 +1,3 @@
-# app/controllers/search_logs_controller.rb
 class SearchLogsController < ApplicationController
   def index
     @search_logs = SearchLog
