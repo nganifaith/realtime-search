@@ -32,11 +32,11 @@ Make sure you have the following installed:
 
 1. Clone the repository:
 ```bash
-   git clone https://github.com/yourusername/real-time-article-search.git
+   git clone https://github.com/nganifaith/realtime-search
 ```
 2. Navigate to the project directory:
 ```
-cd real-time-article-search
+cd realtime-search
 ```
 3. Install dependencies:
 ```
