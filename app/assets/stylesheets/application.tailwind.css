@@ -1,13 +1,23 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
-/*
-
-@layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
-  }
+.pagination {
+  @apply flex justify-center;
+  @apply mt-4 mb-2 py-2;
 }
 
-*/
+.pagination * {
+  @apply px-3 py-2 mx-2;
+  @apply dark:text-gray-700 text-white no-underline dark:bg-white bg-blue-700 rounded-lg;
+}
+
+.pagination a:hover, .pagination .current {
+  @apply font-semibold dark:text-gray-200 text-white dark:bg-gray-700 bg-blue-800;
+}
+
+.pagination .disabled {
+  @apply opacity-60;
+}
+
+@tailwind utilities;
+
